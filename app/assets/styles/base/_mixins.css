@@ -1,0 +1,26 @@
+@define-mixin atTablet {
+    @media (min-width: 768px) {
+        @mixin-content;
+    }
+};
+
+@define-mixin atDesktop {
+    @media (min-width: 1024px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atLgDesktop {
+    @media (min-width: 1440px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+    

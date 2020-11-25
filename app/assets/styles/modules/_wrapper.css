@@ -1,0 +1,22 @@
+.wrapper {
+    padding: 0px 18px;
+    max-width: 1236px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    &--medium {
+        max-width: 976px;
+    }
+
+    .wrapper {
+        padding: 0px 0px;
+    }
+
+    &--b-margin {
+        margin-bottom: 1rem;
+
+        @mixin atTablet {
+            margin-bottom: 3.875rem;
+        }
+    }
+}

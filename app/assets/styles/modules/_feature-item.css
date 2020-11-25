@@ -1,0 +1,34 @@
+.feature-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+
+    @mixin atTablet {
+        padding-left: 94px;
+    }
+
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1.3em;
+
+        @mixin atTablet {
+            position: absolute;
+            left: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top: .7em;
+        margin-bottom: .8rem;
+        text-align: center;
+
+        @mixin atTablet {
+            font-size: 1.875rem;
+            margin-top: 1em;
+            text-align: left;
+        }
+    }
+}

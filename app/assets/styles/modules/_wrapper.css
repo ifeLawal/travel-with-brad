@@ -8,6 +8,26 @@
         max-width: 976px;
     }
 
+    &--no-padding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atTablet {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
+    &--no-padding-until-large {
+        padding-left: 0;
+        padding-right: 0;
+
+        @mixin atDesktop {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+
     .wrapper {
         padding: 0px 0px;
     }

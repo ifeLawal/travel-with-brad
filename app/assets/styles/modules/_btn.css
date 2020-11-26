@@ -6,6 +6,8 @@
     border-radius: .31rem;
     display: inline-block;
 
+    @mixin buttonShine{};
+
     &--orange{
         background-color: $mainOrange;
     }

@@ -4,10 +4,12 @@
 
     &__image {
         display: block;
+
     }
 
     &__text-content {
         position: absolute;
+        padding-top: 60px;
         width: 100%;
         text-align: center;
         top: 50%;

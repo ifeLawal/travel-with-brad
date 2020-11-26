@@ -12,6 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "css-loader": "^5.0.1",
+    "postcss-hexrgba": "^2.0.1",
     "postcss-import": "^13.0.0",
     "postcss-loader": "^4.0.4",
     "postcss-mixins": "^6.2.3",

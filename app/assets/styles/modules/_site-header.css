@@ -10,7 +10,12 @@
     }
 
     @mixin atTablet {
+        position: fixed;
         background-color: rgba($mainBlue, .3);
+
+        &--dark {
+            background-color: rgba(23, 51, 72, .85);
+        }
     }
 
     &__btn-container {
@@ -27,11 +32,17 @@
         transform: translateX(-50%);
         background-color: $mainBlue;
         padding: .75rem 1.8rem;
+        transform-origin: 50% 0%;
+        transition: transform .5s ease-out;
 
         @mixin atTablet {
             transform: translateX(0);
             left: auto;
             padding: 1.4rem 2.3rem;
+
+            .site-header--dark & {
+                transform: scale(.6);
+            }
         }
     }
 
